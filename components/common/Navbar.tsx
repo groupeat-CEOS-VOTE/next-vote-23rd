@@ -67,10 +67,10 @@ export default function Navbar() {
         </>
       ) : (
         <Link
-          href="/login"
+          href="/signup"
           className={`w-full flex justify-center items-center
       ${
-        pathname === '/login'
+        pathname === '/signup' || pathname === '/'
           ? 'bg-primary text-white'
           : 'bg-white text-primary hover:bg-blue-900/10'
       }`}
